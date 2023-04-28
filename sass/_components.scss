@@ -1,0 +1,102 @@
+@use 'variables';
+
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//? Menu Lateral
+.lateral-menu {
+    @include flex-center-center();
+    flex-direction: column;
+    justify-content: space-between;
+    width: variables.$lenLarge2;
+    height: 100dvh;
+    background-color: variables.$darkColor1;
+
+    .logo {
+        @include flex-center-center();
+        width: 100%;
+        height: variables.$lenLarge3;
+        background-color: variables.$mainColor1;
+        color: variables.$fontColor1;
+        font-size: variables.$lenMedium3;
+    }
+
+    .menu-icons {
+        @include flex-center-center();
+        flex-direction: column;
+        gap: variables.$lenSmall3;
+
+        .menu-icon {
+            @include flex-center-center();
+            width: variables.$lenLarge1;
+            height: variables.$lenLarge1;
+            border-radius: 50%;
+            background-color: variables.$darkColor2;
+            color: variables.$fontColor1;
+            font-size: variables.$lenMedium2;
+        }
+    }
+
+    .upload {
+        @include flex-center-center();
+        width: variables.$lenLarge1;
+        height: variables.$lenLarge1;
+        border-radius: 50%;
+        margin-bottom: variables.$lenMedium1;
+        background-color: variables.$mainColor1;
+        color: variables.$fontColor1;
+        font-size: variables.$lenMedium2;
+    }
+}
+
+//? Header
+header {
+    @include flex-center-center();
+    justify-content: space-between;
+    width: calc(100vw - variables.$lenLarge2);
+    height: variables.$lenLarge3;
+    padding-inline: variables.$lenMedium1;
+    background-color: variables.$darkColor2;
+
+    .search {
+        @include flex-center-center();
+        gap: variables.$lenSmall2;
+        width: 14rem;
+        height: variables.$lenMedium3;
+        border-radius: variables.$lenMedium3;
+        background-color: variables.$darkColor3;
+        color: variables.$fontColor1;
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+            color: variables.$fontColor1;
+            font-size: variables.$lenSmall3;
+        }
+    }
+
+    .title-header {
+        font-size: variables.$lenMedium2;
+        color: variables.$fontColor1;
+        font-weight: 800;
+    }
+
+    .profile-icons {
+        @include flex-center-center();
+        gap: variables.$lenMedium3;
+        font-size: variables.$lenMedium2;
+        color: variables.$fontColor1;
+
+        img {
+            width: variables.$lenLarge1;
+            height: variables.$lenLarge1;
+            border-radius: 50%;
+            border: 2px solid variables.$mainColor1;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    background-color: variables.$darkColor3;
+}
+
+.lateral-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header {
+    position: fixed;
+    left: variables.$lenLarge2;
+    top: 0;
+}
