@@ -23,6 +23,10 @@
         background-color: variables.$mainColor1;
         color: variables.$fontColor1;
         font-size: variables.$lenMedium3;
+
+        img {
+            width: 80%;
+        }
     }
 
     .menu-icons {

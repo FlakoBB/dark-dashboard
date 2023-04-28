@@ -19,6 +19,9 @@
   color: rgba(255, 255, 255, 0.96);
   font-size: 28px;
 }
+.lateral-menu .logo img {
+  width: 80%;
+}
 .lateral-menu .menu-icons {
   display: flex;
   align-items: center;
