@@ -68,7 +68,7 @@ header {
 
     .search {
         @include flex-center-center();
-        gap: variables.$lenSmall2;
+        justify-content: space-evenly;
         width: 10rem;
         height: variables.$lenMedium3;
         padding: variables.$lenSmall1 0;
@@ -114,9 +114,6 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30% auto;
     gap: variables.$lenMedium2;
-    position: relative;
-    top: variables.$lenLarge3;
-    left: variables.$lenLarge2;
     width: calc(100vw - variables.$lenLarge2);
     height: calc(100dvh - variables.$lenLarge3);
     padding: variables.$lenMedium2;

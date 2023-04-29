@@ -67,7 +67,7 @@ header .search {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  justify-content: space-evenly;
   width: 10rem;
   height: 28px;
   padding: 6px 0;
@@ -109,9 +109,6 @@ header .profile-icons img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 30% auto;
   gap: 22px;
-  position: relative;
-  top: 72px;
-  left: 56px;
   width: calc(100vw - 56px);
   height: calc(100dvh - 72px);
   padding: 22px;
@@ -163,6 +160,12 @@ header {
   position: fixed;
   left: 56px;
   top: 0;
+}
+
+.main-content {
+  position: relative;
+  top: 72px;
+  left: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */
