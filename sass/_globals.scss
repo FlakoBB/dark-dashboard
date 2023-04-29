@@ -31,4 +31,23 @@ header {
     position: relative;
     top: variables.$lenLarge3;
     left: variables.$lenLarge2;
+
+    .cases {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .healthy {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .datos {
+        grid-area: 1 / 3 / 2 / 5;
+    }
+    .survival {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .recovered {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+    .rate {
+        grid-area: 2 / 4 / 3 / 5;
+    }
 }
