@@ -18,6 +18,7 @@
   background-color: #8738F9;
   color: rgba(255, 255, 255, 0.96);
   font-size: 28px;
+  cursor: pointer;
 }
 .lateral-menu .logo img {
   width: 80%;
@@ -40,6 +41,10 @@
   color: rgba(255, 255, 255, 0.96);
   font-size: 22px;
 }
+.lateral-menu .menu-icons .menu-icon:hover {
+  color: rgba(255, 255, 255, 0.67);
+  cursor: pointer;
+}
 .lateral-menu .upload {
   display: flex;
   align-items: center;
@@ -51,6 +56,10 @@
   background-color: #8738F9;
   color: rgba(255, 255, 255, 0.96);
   font-size: 22px;
+}
+.lateral-menu .upload:hover {
+  color: rgba(255, 255, 255, 0.67);
+  cursor: pointer;
 }
 
 header {
@@ -75,6 +84,10 @@ header .search {
   background-color: #242424;
   color: rgba(255, 255, 255, 0.96);
 }
+header .search i:hover {
+  color: rgba(255, 255, 255, 0.67);
+  cursor: pointer;
+}
 header .search input {
   width: 60%;
   height: 100%;
@@ -88,6 +101,7 @@ header .title-header {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.96);
   font-weight: 800;
+  user-select: none;
 }
 header .profile-icons {
   display: flex;
@@ -97,11 +111,28 @@ header .profile-icons {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.96);
 }
+header .profile-icons i:hover {
+  color: rgba(255, 255, 255, 0.67);
+  cursor: pointer;
+}
+header .profile-icons .bell-container {
+  position: relative;
+}
+header .profile-icons .bell-container .bell-badge {
+  position: absolute;
+  top: 6px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #C651CD;
+}
 header .profile-icons img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid #8738F9;
+  cursor: pointer;
 }
 
 .main-content {

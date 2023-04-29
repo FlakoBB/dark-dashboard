@@ -23,6 +23,7 @@
         background-color: variables.$mainColor1;
         color: variables.$fontColor1;
         font-size: variables.$lenMedium3;
+        cursor: pointer;
 
         img {
             width: 80%;
@@ -42,6 +43,11 @@
             background-color: variables.$darkColor2;
             color: variables.$fontColor1;
             font-size: variables.$lenMedium2;
+
+            &:hover {
+                color: variables.$fontColor2;
+                cursor: pointer;
+            }
         }
     }
 
@@ -54,6 +60,11 @@
         background-color: variables.$mainColor1;
         color: variables.$fontColor1;
         font-size: variables.$lenMedium2;
+
+        &:hover {
+            color: variables.$fontColor2;
+            cursor: pointer;
+        }
     }
 }
 
@@ -76,6 +87,11 @@ header {
         background-color: variables.$darkColor3;
         color: variables.$fontColor1;
 
+        i:hover {
+            color: variables.$fontColor2;
+            cursor: pointer;
+        }
+
         input {
             width: 60%;
             height: 100%;
@@ -91,6 +107,7 @@ header {
         font-size: variables.$lenMedium2;
         color: variables.$fontColor1;
         font-weight: 800;
+        user-select: none
     }
 
     .profile-icons {
@@ -99,11 +116,31 @@ header {
         font-size: variables.$lenMedium2;
         color: variables.$fontColor1;
 
+        i:hover {
+            color: variables.$fontColor2;
+            cursor: pointer;
+        }
+
+        .bell-container {
+            position: relative;
+
+            .bell-badge {
+                position: absolute;
+                top: variables.$lenSmall1;
+                right: -1px;
+                width: variables.$lenSmall2;
+                height: variables.$lenSmall2;
+                border-radius: 50%;
+                background-color: variables.$mainColor2;
+            }
+        }
+
         img {
             width: variables.$lenLarge1;
             height: variables.$lenLarge1;
             border-radius: 50%;
             border: 2px solid variables.$mainColor1;
+            cursor: pointer;
         }
     }
 }
