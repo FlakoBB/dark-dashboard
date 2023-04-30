@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/Icono_FLK_Morado.ico">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/b082e0647c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -92,9 +93,17 @@
         <div class="info recovered">
             <h3>recovered</h3>
         </div>
-        <div class="info rate">
-            <h3>rate</h3>
-        </div>
+        <article class="info rate">
+            <h3>R rate</h3>
+            <div class="rate-data">
+                <span class="rate-num">159</span>
+                <span class="rate-p">p/100k</span>
+                <canvas id="rate-chart"></canvas>
+            </div>
+        </article>
     </main>
+    <!-- ToDo: hacer las graficas con Chart JS -->
+    <!-- https://www.chartjs.org/docs/latest/getting-started/integration.html -->
 </body>
+<script src="./js/charts.js"></script>
 </html>
