@@ -87,23 +87,47 @@
                 </div>
             </div>
         </article>
-        <div class="info survival">
-            <h3>survival</h3>
-        </div>
-        <div class="info recovered">
-            <h3>recovered</h3>
-        </div>
+        <article class="info survival">
+            <h3 class="survival-title">Survival</h3>
+            <div class="survival-data">
+                <span class="survival-data-num">99.8%</span>
+                <span class="survival-data-title">Current rate</span>
+            </div>
+            <div class="survival-chart-container">
+                <canvas id="survival-chart"></canvas>
+            </div>
+        </article>
+        <article class="info recovered">
+            <h3 class="recovered-title">Recovered</h3>
+            <div class="recovered-data">
+                <div class="recovered-data-info">
+                    <span class="recovered-data-info-num">112k</span>
+                    <span class="recovered-data-info-title">This week</span>
+                </div>
+                <div class="recovered-data-info">
+                    <span class="recovered-data-info-num">240k</span>
+                    <span class="recovered-data-info-title">This month</span>
+                </div>
+                <div class="recovered-data-info">
+                    <span class="recovered-data-info-num">564k</span>
+                    <span class="recovered-data-info-title">This year</span>
+                </div>
+            </div>
+            <div class="recovered-chart-container">
+                <canvas id="recovered-chart"></canvas>
+            </div>
+        </article>
         <article class="info rate">
-            <h3>R rate</h3>
+            <h3 class="rate-title">R rate</h3>
             <div class="rate-data">
                 <span class="rate-num">159</span>
                 <span class="rate-p">p/100k</span>
+            </div>
+            <div class="rate-chart-container">
                 <canvas id="rate-chart"></canvas>
             </div>
         </article>
     </main>
-    <!-- ToDo: hacer las graficas con Chart JS -->
-    <!-- https://www.chartjs.org/docs/latest/getting-started/integration.html -->
 </body>
 <script src="./js/charts.js"></script>
 </html>

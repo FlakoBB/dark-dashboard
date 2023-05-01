@@ -143,6 +143,7 @@ header .profile-icons img {
   width: calc(100vw - 56px);
   height: calc(100dvh - 72px);
   padding: 22px;
+  user-select: none;
 }
 .main-content .info {
   padding: 16px;
@@ -240,6 +241,103 @@ header .profile-icons img {
 .main-content .datos .datos-block .datos-block-data .datos-block-num {
   color: rgba(255, 255, 255, 0.96);
   font-size: 40px;
+}
+.main-content .rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content .rate .rate-title {
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .rate .rate-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.main-content .rate .rate-data .rate-num {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .rate .rate-data .rate-p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.67);
+}
+.main-content .rate .rate-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .recovered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content .recovered .recovered-title {
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .recovered .recovered-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.main-content .recovered .recovered-data .recovered-data-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.main-content .recovered .recovered-data .recovered-data-info .recovered-data-info-num {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .recovered .recovered-data .recovered-data-info .recovered-data-info-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.67);
+}
+.main-content .recovered .recovered-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .survival {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content .survival .survival-title {
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .survival .survival-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.main-content .survival .survival-data .survival-data-num {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.96);
+}
+.main-content .survival .survival-data .survival-data-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.67);
+}
+.main-content .survival .survival-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 * {

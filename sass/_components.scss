@@ -154,6 +154,7 @@ header {
     width: calc(100vw - variables.$lenLarge2);
     height: calc(100dvh - variables.$lenLarge3);
     padding: variables.$lenMedium2;
+    user-select: none;
 
     //* estilos generales de cada bloque de informacion
     .info {
@@ -243,4 +244,102 @@ header {
             }
         }
     }
+
+    .rate {
+        @include flex-center-center();
+        flex-direction: column;
+        justify-content: space-between;
+
+        .rate-title {
+            color: variables.$fontColor1;
+        }
+
+        .rate-data {
+            @include flex-center-center();
+            flex-direction: column;
+            line-height: 1.2;
+
+            .rate-num {
+                font-size: variables.$lenMedium2;
+                color: variables.$fontColor1;
+            }
+
+            .rate-p {
+                font-size: variables.$lenSmall3;
+                color: variables.$fontColor2;
+            }
+        }
+
+        .rate-chart-container {
+            @include flex-center-center();
+        }
+    }
+
+    .recovered {
+        @include flex-center-center();
+        flex-direction: column;
+        justify-content: space-between;
+
+        .recovered-title {
+            color: variables.$fontColor1;
+        }
+
+        .recovered-data {
+            @include flex-center-center();
+            justify-content: space-evenly;
+            width: 100%;
+
+            .recovered-data-info {
+                @include flex-center-center();
+                flex-direction: column;
+                line-height: 1.2;
+
+                .recovered-data-info-num {
+                    font-size: variables.$lenMedium2;
+                    color: variables.$fontColor1;
+                }
+
+                .recovered-data-info-title {
+                    font-size: variables.$lenSmall3;
+                    color: variables.$fontColor2;
+                }
+            }
+        }
+
+        .recovered-chart-container {
+            @include flex-center-center();
+        }
+    }
+
+    .survival {
+        @include flex-center-center();
+        flex-direction: column;
+        justify-content: space-between;
+
+        .survival-title {
+            color: variables.$fontColor1;
+        }
+
+        .survival-data {
+            @include flex-center-center();
+            flex-direction: column;
+            line-height: 1.2;
+
+            .survival-data-num {
+                font-size: variables.$lenMedium2;
+                color: variables.$fontColor1;
+            }
+
+            .survival-data-title {
+                font-size: variables.$lenSmall3;
+                color: variables.$fontColor2;
+            }
+        }
+
+        .survival-chart-container {
+            @include flex-center-center();
+        }
+    }
 }
+
+// ToDo: crear diseños responsive
