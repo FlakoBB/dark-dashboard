@@ -72,10 +72,11 @@
 header {
     @include flex-center-center();
     justify-content: space-between;
-    width: calc(100vw - variables.$lenLarge2);
+    width: calc(100dvw - variables.$lenLarge2);
     height: variables.$lenLarge3;
     padding-inline: variables.$lenMedium1;
     background-color: variables.$darkColor2;
+    z-index: 1;
 
     .search {
         @include flex-center-center();
@@ -148,11 +149,12 @@ header {
 //? Contenido principal
 .main-content {
     display: grid;
+    place-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 30% auto;
     gap: variables.$lenMedium2;
     width: calc(100vw - variables.$lenLarge2);
-    height: calc(100dvh - variables.$lenLarge3);
+    min-height: calc(100dvh - variables.$lenLarge3);
     padding: variables.$lenMedium2;
     user-select: none;
 
@@ -203,6 +205,8 @@ header {
     .datos {
         @include flex-center-center();
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: variables.$lenMedium3;
 
         .datos-block {
             @include flex-center-center();
@@ -343,3 +347,34 @@ header {
 }
 
 // ToDo: crear diseños responsive
+//* Responsive
+@media (max-width: 1240px) {
+    .main-content {
+        grid-template-columns: repeat(2, calc(50% - variables.$lenMedium2));
+        grid-template-rows: repeat(2, 10rem) repeat(2, 20rem);
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        
+        .search {
+            display: none;
+        }
+
+        .title-header {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .config-container,
+        .bell-container {
+            display: none;
+        }
+    }
+
+    .main-content {
+        grid-template-columns: calc(100% - variables.$lenMedium2);
+        grid-template-rows: repeat(2, 10rem) auto repeat(3, 20rem);
+    }
+}
